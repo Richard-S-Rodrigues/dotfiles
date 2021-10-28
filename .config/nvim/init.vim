@@ -39,6 +39,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'mattn/emmet-vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
 
@@ -49,7 +50,8 @@ autocmd VimEnter * NERDTree | wincmd p
 " Exit NERDTree if its the only window remaining
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
+" Allow to run prettier without adding // @format to top of file
+let g:prettier#autoformat_require_pragma = 0
 
 "COLORS
 colorscheme onedark
