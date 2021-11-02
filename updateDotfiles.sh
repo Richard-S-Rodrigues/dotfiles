@@ -22,3 +22,6 @@ git commit -m "$commit_msg"
 git config credential.helper store
 git push
 
+cd ~
+sudo rm -r dotfiles
+
