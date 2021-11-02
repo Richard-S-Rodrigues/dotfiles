@@ -1,4 +1,4 @@
-set encoding=UTF-8
+et encoding=UTF-8
 filetype plugin indent on
 set smarttab
 set tabstop=2 
@@ -116,10 +116,32 @@ cmp.setup.cmdline(':', {
   })
 })
 
+local lspconfig = require'lspconfig'
+
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-require'lspconfig'.tsserver.setup{
+lspconfig.tsserver.setup{
 
  capabilities = capabilities
+}
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.cssls.setup {
+  capabilities = capabilities,
+}
+
+
+lspconfig.ccls.setup{
+  init_options = {
+    compilationDatabaseDirectory = "build";
+      index = {
+      threads = 0;
+    };
+    clang = {
+      excludeArgs = { "-frounding-math"} ;
+    };
+  }
 }
 EOF
 
