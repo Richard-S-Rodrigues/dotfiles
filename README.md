@@ -5,17 +5,16 @@
   <div align="center">
     <p>
         My setup is NVIM as text-editor, tmux and i3 as window manager.
-          </p>
-          </div>
+    </p>
+  </div>
 
 ## VIM Setup
 
 - [vim-plug](https://github.com/junegunn/vim-plug)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [onedark.vim](https://github.com/joshdick/onedark.vim) - My VIM theme
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [FZF](https://github.com/junegunn/fzf)
 - [NERDTree](https://github.com/preservim/nerdtree)
 
 ## Shell Setup
