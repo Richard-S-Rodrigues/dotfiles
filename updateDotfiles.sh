@@ -9,8 +9,8 @@ cd ~
 git clone https://github.com/Richard-S-Rodrigues/dotfiles.git
 cd dotfiles
 
-cp -r ~/.config/nvim/init.vim .config/nvim
-cp -r ~/.config/fish/config.fish .config/fish
+cp -r ~/.config/nvim/ .config/
+cp -r ~/.config/fish/ .config/
 cp -r ~/.config/i3/config .config/i3
 cp -r ~/.tmux.conf .tmux.conf
 
