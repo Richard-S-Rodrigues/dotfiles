@@ -62,4 +62,3 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Compile and run C/C++
 nnoremap <silent> <F6> :<c-u>make %< && ./%<<cr>
 
-
